@@ -22,3 +22,10 @@ jobs:
         name: Run tests
         run: |
           go test -v ./...
+  job1:
+    environment: Production
+    steps:
+      - uses: Mend
+        kind: scan
+    needs:
+      - ci-job

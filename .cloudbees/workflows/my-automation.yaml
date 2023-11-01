@@ -25,7 +25,7 @@ jobs:
   job1:
     environment: Production
     steps:
-      - uses: Mend
+      - uses: Mend-Sast
         kind: scan
     needs:
       - ci-job
